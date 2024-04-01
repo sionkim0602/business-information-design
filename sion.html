@@ -8,7 +8,7 @@
     <style>
 
 body{
-    background-color: white
+    background-color: white;
 }
   
 #timer {
@@ -29,18 +29,17 @@ body{
 
 .days {
   background: #FFFDF1;
-  color: #183059;
 }
 
 .hours {
   background: #FFFDF1;
-  color: #183059;
+  color: #00462A;
 }
 
 .minutes {
   background: #FFFDF1;
-  color: #183059;
 }
+
 
 
 .numbers {
@@ -50,7 +49,7 @@ body{
   text-align: center;
 }
 
-.ewhapearblossom {
+.white {
   position: absolute;
   background:  #FFFDF1;
   height: 85px;
@@ -59,7 +58,7 @@ body{
   top: 2%;
 }
 
-.ewhapearblossom {
+.red {
   position: absolute;
   background:  #FFFDF1;
   left: 18%;
@@ -69,7 +68,7 @@ body{
  
 }
 
-.ewhapearblossom {
+.blue {
   position: absolute;
   background:  #FFFDF1;
   height: 80px;
@@ -100,7 +99,7 @@ body{
 </body>
 <script>
     const year = new Date().getFullYear();
-const myDate = new Date('jun 2, 2024 00:00:00');
+const myDate = new Date('Oct 3, 2024 00:00:00');
 console.log(myDate);
 
 // countdown
@@ -116,11 +115,13 @@ let timer = setInterval(function() {
   let days = Math.floor(diff / (1000 * 60 * 60 * 24));
   let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
- 
+
+
   // display
   document.getElementById("days").innerHTML=days
   document.getElementById("hours").innerHTML=hours
   document.getElementById("minutes").innerHTML=minutes
+
 
 
 
