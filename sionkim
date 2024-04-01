@@ -46,18 +46,18 @@ body{
   text-align: center;
 }
 
-.white {
+.ewhapearblossom {
   position: absolute;
-  background:  #eeeeee;
+  background:  #FFFDF1;
   height: 85px;
   width: 75px;
   left: 30%;
   top: 2%;
 }
 
-.red {
+.ewhapearblossom {
   position: absolute;
-  background:  #EF2F3C;
+  background:  #FFFDF1;
   left: 18%;
   top: 9%;
   height: 65px;
@@ -65,9 +65,9 @@ body{
  
 }
 
-.blue {
+.ewhapearblossom {
   position: absolute;
-  background:  #276FBF;
+  background:  #FFFDF1;
   height: 80px;
   width: 80px;
   left: 60%;
