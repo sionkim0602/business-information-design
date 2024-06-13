@@ -8,11 +8,11 @@
     <style>
 
 body{
-    background-color: ewhapearblossom;
+    background-color: white;
 }
   
 #timer {
-  color: #FFFDF1;
+  color: #8bcef0;
   text-align: center;
   text-transform: uppercase;
   font-family: 'Lato', sans-serif;
@@ -28,39 +28,36 @@ body{
 }
 
 .days {
-  background: #FFFDF1;
+  background: #8bcef0;
 }
 
 .hours {
-  background: #FFFDF1;
-  color: #00462A;
-}
+  background: #8bcef0;
+ }
 
 .minutes {
-  background: #FFFDF1;
+  background: #8bcef0;
 }
-
-
 
 .numbers {
   font-family: 'Montserrat', sans-serif;
-  color:  #00462A;
+  color:  #0594b0;
   font-size: 4em;
   text-align: center;
 }
 
-.ewhapearblossom {
+.white {
   position: absolute;
-  background:  #FFFDF1;
+  background:  #8bcef0;
   height: 85px;
   width: 75px;
   left: 30%;
   top: 2%;
 }
 
-.ewhapearblossom {
+.red {
   position: absolute;
-  background:  #FFFDF1;
+  background:  #8bcef0;
   left: 18%;
   top: 9%;
   height: 65px;
@@ -68,9 +65,9 @@ body{
  
 }
 
-.ewhapearblossom {
+.blue {
   position: absolute;
-  background:  #FFFDF1;
+  background:  #8bcef0;
   height: 80px;
   width: 80px;
   left: 60%;
@@ -92,14 +89,15 @@ body{
         <div  id="hours" class="numbers"> </div>hours</div> 
       <div class="minutes"> 
         <div  id="minutes" class="numbers"> </div>minutes</div> 
-
+      
+      </div>
 
 </div>
 
 </body>
 <script>
     const year = new Date().getFullYear();
-const myDate = new Date('jun. 2, 2025 00:00:00');
+const myDate = new Date('June 2, 2025 00:00:00');
 console.log(myDate);
 
 // countdown
@@ -115,16 +113,6 @@ let timer = setInterval(function() {
   let days = Math.floor(diff / (1000 * 60 * 60 * 24));
   let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-
-
+ 
   // display
   document.getElementById("days").innerHTML=days
-  document.getElementById("hours").innerHTML=hours
-  document.getElementById("minutes").innerHTML=minutes
-
-
-
-
-}, 1);
-</script>
-</html>
