@@ -8,11 +8,11 @@
     <style>
 
 body{
-    background-color: white;
+    background-color: #0594b0;
 }
   
 #timer {
-  color: #00462A;
+  color: #8bcef0;
   text-align: center;
   text-transform: uppercase;
   font-family: 'Lato', sans-serif;
@@ -20,7 +20,7 @@ body{
   letter-spacing: 5px;
 }
 
-.days, .hours, .minutes {
+.days, .hours {
   display: inline-block;
   padding: 20px;
   width: 100px;
@@ -28,27 +28,25 @@ body{
 }
 
 .days {
-  background: #FFFDF1;
+  background: #0594b0;
 }
 
 .hours {
-  background: #FFFDF1;
+  background: #0594b0;
  }
 
-.minutes {
-  background: #FFFDF1;
-}
+
 
 .numbers {
   font-family: 'Montserrat', sans-serif;
-  color:  #00462A;
+  color:  #8bcef0;
   font-size: 4em;
   text-align: center;
 }
 
 .ewhapearblossom {
   position: absolute;
-  background:  #FFFDF1;
+  background:  #0594b0;
   height: 85px;
   width: 75px;
   left: 30%;
@@ -57,7 +55,7 @@ body{
 
 .ewhapearblossom {
   position: absolute;
-  background:  #FFFDF1;
+  background:  #0594b0;
   left: 18%;
   top: 9%;
   height: 65px;
@@ -67,7 +65,7 @@ body{
 
 .ewhapearblossom {
   position: absolute;
-  background:  #FFFDF1;
+  background:  #0594b0;
   height: 80px;
   width: 80px;
   left: 60%;
@@ -87,8 +85,7 @@ body{
         <div id="days" class="numbers "> </div>days</div> 
       <div class="hours"> 
         <div  id="hours" class="numbers"> </div>hours</div> 
-      <div class="minutes"> 
-        <div  id="minutes" class="numbers"> </div>minutes</div> 
+
       
       </div>
 
@@ -97,7 +94,7 @@ body{
 </body>
 <script>
     const year = new Date().getFullYear();
-const myDate = new Date('July 10, 2024 00:00:00');
+const myDate = new Date('Jun 02, 2025 00:00:00');
 console.log(myDate);
 
 // countdown
@@ -112,12 +109,12 @@ let timer = setInterval(function() {
   // math
   let days = Math.floor(diff / (1000 * 60 * 60 * 24));
   let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  
  
   // display
   document.getElementById("days").innerHTML=days
   document.getElementById("hours").innerHTML=hours
-  document.getElementById("minutes").innerHTML=minutes
+  
   
 
 
